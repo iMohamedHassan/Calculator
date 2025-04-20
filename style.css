@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+}
+
+header h1 {
+  color: #fff;
+  margin-left: 10%;
+}
+
+#operation {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 290px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: none;
+  background-color: #333;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500; /* Medium weight for better readability */
+  font-size: 1.5rem; /* Adjust font size */
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+#operation::placeholder {
+  color: #aaa;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  width: 350px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.grid-container * {
+  border: none;
+  background-color: #333;
+  height: 70px;
+  color: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400; /* Regular weight for buttons */
+  font-size: 1.5rem; /* Adjust font size */
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.grid-container *:hover {
+  background: #555; /* Slightly brighter gradient on hover */
+  transform: scale(1.03); /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.grid-container *:active {
+  background: #222; /* Darker background on click */
+  transform: scale(0.95); /* Slight shrink effect */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  margin-top: 10%;
+}
