@@ -84,3 +84,51 @@ header h1 {
   margin: auto;
   margin-top: 10%;
 }
+
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  #operation {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    height: 45px; /* Reduce input height */
+    padding: 5px 15px; /* Adjust padding */
+  }
+
+  .grid-container {
+    width: 90%; /* Make grid container take up more space */
+    gap: 8px; /* Reduce gap between buttons */
+  }
+
+  .grid-container * {
+    font-size: 1.2rem; /* Adjust button font size */
+    height: 60px; /* Reduce button height */
+  }
+
+  .container {
+    width: 90%; /* Adjust container width */
+    margin-top: 5%; /* Adjust top margin */
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  #operation {
+    font-size: 1rem; /* Further reduce font size */
+    height: 40px; /* Reduce input height */
+    padding: 5px 10px; /* Adjust padding */
+  }
+
+  .grid-container {
+    width: 100%; /* Make grid container take up full width */
+    gap: 5px; /* Reduce gap between buttons */
+  }
+
+  .grid-container * {
+    font-size: 1rem; /* Further reduce button font size */
+    height: 50px; /* Reduce button height */
+  }
+
+  .container {
+    width: 95%; /* Adjust container width */
+    margin-top: 5%; /* Adjust top margin */
+  }
+}
